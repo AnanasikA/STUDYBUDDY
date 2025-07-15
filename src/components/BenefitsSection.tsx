@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { JSX } from 'react';
 
 import {
@@ -13,7 +14,7 @@ import Image from 'next/image';
 
 export default function BenefitsSection() {
   return (
-    <section className="bg-white text-black py-16">
+    <section id="benefit" className="bg-white text-black py-16">
       <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Ilustracja + przycisk */}
         <div className="flex flex-col items-center md:items-start">
@@ -24,9 +25,13 @@ export default function BenefitsSection() {
             height={400}
             className="object-contain"
           />
-          <button className="mt-0 ml-24 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 shadow-md transition">
-            Sprawdź, jak to działa
-          </button>
+   <Link
+  href="#kontakt"
+  className="mt-0 ml-24 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 shadow-md transition inline-block"
+>
+  Sprawdź, jak to działa
+</Link>
+
         </div>
 
         {/* Tekst + kafelki */}

@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function GetStartedSection() {
   return (
-    <section className="bg-white py-16 border-t border-gray-200">
+    <section id="kontakt" className="bg-white py-16 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* 🔸 Lewa część: ilustracja + tekst */}

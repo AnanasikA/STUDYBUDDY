@@ -31,13 +31,21 @@ export default function Hero() {
 
           {/* Przyciski */}
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-            <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-md text-sm font-medium transition w-full sm:w-auto">
-              Znajdź korepetytora
-            </button>
-            <button className="flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium text-black border border-black rounded-md hover:bg-gray-100 transition w-full sm:w-auto">
-              <FiPlay className="text-base" />
-              Dowiedz się więcej
-            </button>
+           <Link
+  href="/znajdz"
+  className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-md text-sm font-medium transition w-full sm:w-auto text-center"
+>
+  Znajdź korepetytora
+</Link>
+
+        <Link
+  href="/o-nas/misja"
+  className="flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium text-black border border-black rounded-md hover:bg-gray-100 transition w-full sm:w-auto"
+>
+  <FiPlay className="text-sm" />
+  Dowiedz się więcej
+</Link>
+
           </div>
         </div>
 
@@ -71,10 +79,12 @@ export default function Hero() {
                 className="mt-2 border border-gray-300 rounded-xl overflow-hidden block w-[140px] shadow-md"
               >
                 <Image
-                  src="https://img.youtube.com/vi/wA27bVHcgEI/hqdefault.jpg"
-                  alt="Miniaturka wideo"
-                  className="w-full h-auto"
-                />
+  src="/youtube-thumb.jpg"
+  alt="Miniaturka"
+  width={140}
+  height={100}
+/>
+
                 <div className="bg-black text-white text-xs p-1 flex items-center justify-center gap-1">
                   <FiPlay className="text-white text-sm" />
                   Zobacz więcej
